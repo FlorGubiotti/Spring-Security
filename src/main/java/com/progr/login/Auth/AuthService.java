@@ -36,7 +36,7 @@ public class AuthService {
             .username(request.getUsername())
             .password(passwordEncoder.encode(request.getPassword()))
             .firstname(request.getFirstname())
-            .lastname(request.getLastname())
+            .lastname(request.lastname)
             .country(request.getCountry())
             .role(Role.USER)
             .build();
